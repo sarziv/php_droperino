@@ -56,7 +56,7 @@ include("modals/folderModal.php");
 
 		<div class="breadcrumbs"></div>
 
-		<ul class="data"></ul>
+		<ul id="data" class="data"></ul>
 		<div class="nothingfound">
 			<div class="nofiles"></div>
 			<span>No files here.</span>
