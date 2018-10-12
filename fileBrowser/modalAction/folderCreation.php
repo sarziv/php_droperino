@@ -10,14 +10,9 @@ $path = "../Files/" . $folderName;
 if (!empty($folderName) && (!file_exists($path))) {
     //creates folder by path
     mkdir($path);
-
-    echo '<script type="text/javascript">
-        alert("Folder already exist.");
-        window.location.href="../../../Php_droperino/fileBrowser/index.php";  
-        </script>';
     //TODO Notification info Success
     //redirect back on success
-
+    header('Location: ' . $_SERVER['HTTP_REFERER']);
 } else {
     //TODO Notification info fail
     ////redirect back on fail
