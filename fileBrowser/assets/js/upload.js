@@ -63,11 +63,28 @@ $("#submitForm").on('click', function () {
     }
 });
 
-function FolderAlreadyExist() {
-    $(document).ready(function(){
-
-    });
+$("#submitFormUpload").on('click', function () {
+    let inputlength =  (document.getElementById("fileToUpload").value != "");
+    if (inputlength > 0) {
+        $("#contact_form_upload").submit();
+    } else {
+        $('#myModalUpload').modal('hide');
+        $("#notification").fadeIn("slow").append('No file Selected');
+        $(".dismiss").click(function () {
+            $("#notification").fadeOut("slow");
+        });
+    }
+});
+//binds to onchange event of your input field
+$('#fileToUpload').bind('change', function() {
+if(this.files[0].size > 50000000){
+    document.getElementById("notificationLimit").style.display = "block";
+    document.getElementById("submitFormUpload").disabled = true;
+}else {
+    document.getElementById("notificationLimit").style.display = "none";
+    document.getElementById("submitFormUpload").disabled = false;
 }
+});
 
 
 
