@@ -42,7 +42,7 @@ include("modals/folderModal.php");
 		<!-- Seach button -->
 	<div class="search">
 		<img src="assets/loupe.png">
-		<input type="search" placeholder="I'm looking for?" />
+		<input type="search" placeholder="I'm looking for?" id="searchID"/>
 	</div>
 		<!-- upload button -->
 		<div class="upload">

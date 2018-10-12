@@ -361,7 +361,7 @@ $(function(){
 
 					var name = u.split('/');
 
-					if (i !== breadcrumbsUrls.length - 1) {
+					if (i !== breadcrumbsUrls.length -1) {
 						url += '<a href="'+u+'"><span class="folderName">' + name[name.length-1] + '</span></a> <span class="arrow">→</span> ';
 					}
 					else {

@@ -86,6 +86,11 @@ if(this.files[0].size > 50000000){
 }
 });
 
+$("#searchID").click(function() {
+    document.getElementById("notificationLimit").style.display = "none";
+});
+
+
 
 
 

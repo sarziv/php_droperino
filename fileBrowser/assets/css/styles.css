@@ -129,7 +129,6 @@ body {
 }
 
 .filemanager .search:after {
-
     width: 3px;
     height: 10px;
     background-color: #ffffff;
@@ -141,13 +140,14 @@ body {
     transform: rotate(-45deg);
 }
 
+
 .filemanager .search input[type=search] {
     border-radius: 2px;
     color: #4D535E;
     background-color: #FFF;
     width: 250px;
     height: 44px;
-    margin-left: -215px;
+    margin-left: -135px;
     padding-left: 20px;
     text-decoration-color: #4d535e;
     font-size: 16px;
